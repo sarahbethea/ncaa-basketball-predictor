@@ -43,7 +43,6 @@ tempo_team2 = compute_tempo(team2)
 # Compute adjusted tempo.
 adjusted_tempo = round((tempo_team1 - AVG_D1_TEMPO) + (tempo_team2 - AVG_D1_TEMPO) + AVG_D1_TEMPO, 2)
 
-print('adjusted tempo: ', adjusted_tempo)
 
 def compute_efficiency(team, adjusted_tempo):
     pts = team['pts']

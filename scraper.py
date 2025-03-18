@@ -20,6 +20,8 @@ for row in table.tbody.find_all('tr'):
     team = row.find('td', {'data-stat': 'school_name'}).text.strip()
     # Fix U+00A0 non-breaking space issue.
     team = team.replace('\xa0', ' ')
+    # Remove " NCAA" from any team name
+    team = team.replace(' NCAA', '')  
 
     games = float(row.find('td', {'data-stat': 'g'}).text.strip())
     sos = row.find('td', {'data-stat': 'sos'}).text.strip()

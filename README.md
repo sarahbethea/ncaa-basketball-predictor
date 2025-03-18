@@ -51,7 +51,7 @@ This outputs a teams.csv file in the current directory that contains all the nec
 #### predictor.py
 This script pulls two teams from commandline arguments and predicts their scores in a matchup using the information 
 pulled from teams.csv. 
-Note: Use the exact team names as they appear in teams.csv. If a name contains spaces, enclose it in quotation marks.
+##### Note: Use the exact team names as they appear in teams.csv. If a name contains spaces, enclose it in quotation marks.
 
 #### Run predictor.py with command
 ```bash
@@ -64,9 +64,9 @@ python predictor.py {team 1 name} {team 2 name}
 python scraper.py
 ```
 
-* Step 2: Predict game outcomes for Montana and Nevada NCAA
+* Step 2: Predict game outcomes for Montana and Northern Arizona
 ```bash
-python predictor.py Montana "Nevada NCAA"
+python predictor.py Montana "Northern Arizona"
 ```
 
 ## Future improvements
