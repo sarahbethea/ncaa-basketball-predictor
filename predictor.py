@@ -93,7 +93,7 @@ factor_adjustment_team2 *= 10
 luck_team1 = random.uniform(-2, 2)
 luck_team2 = random.uniform(-2, 2)
 
-# Strength of schedule (sos) adjustment.
+# Strength of Schedule (SOS) adjustment.
 sos_adjustment_team1 = team1['sos'] * 0.1
 sos_adjustment_team2 = team2['sos'] * 0.1
 
