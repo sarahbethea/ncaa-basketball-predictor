@@ -17,8 +17,6 @@ Following a KenPom-style approach, the two teams are compared using four key sta
 * 15% Free Throw Rate (FT Rate)
 ##### Strength of Schedule (SOS) Adjustment:
 To reward teams to have faced tougher opponents during the season, a boost is applied to each team's score based on their Strength of Schedule (SOS).
-##### Luck Factor:
-To simulate real-world variance, we introduce a random "luck" factor for each team, which randomly adds or subtracts up to 2 points.
 
 ## Dependencies
 Make sure you have the following Python packages installed:

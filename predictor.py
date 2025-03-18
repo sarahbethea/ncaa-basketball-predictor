@@ -88,17 +88,13 @@ factor_adjustment_team2 = round((0.4 * (efg2 - efg1)) + (0.25 * (to1 - to2)) + (
 factor_adjustment_team1 *= 10  
 factor_adjustment_team2 *= 10  
 
-# Add random luck factor by selecting random float between -2 and 2.
-luck_team1 = random.uniform(-2, 2)
-luck_team2 = random.uniform(-2, 2)
-
 # Strength of Schedule (SOS) adjustment.
 sos_adjustment_team1 = team1['sos'] * 0.1
 sos_adjustment_team2 = team2['sos'] * 0.1
 
 # Calculate predicted score.
-predicted_score_team1 = round((adjusted_tempo / 100) * adjusted_oe_team1 + factor_adjustment_team1 + sos_adjustment_team1 + luck_team1, 2)
-predicted_score_team2 = round((adjusted_tempo / 100) * adjusted_oe_team2 + factor_adjustment_team2 + sos_adjustment_team2 + luck_team2, 2)
+predicted_score_team1 = round((adjusted_tempo / 100) * adjusted_oe_team1 + factor_adjustment_team1 + sos_adjustment_team1, 2)
+predicted_score_team2 = round((adjusted_tempo / 100) * adjusted_oe_team2 + factor_adjustment_team2 + sos_adjustment_team2, 2)
 
 print(f"{name_team1}: ", predicted_score_team1, f" {name_team2}: ", predicted_score_team2)
 
