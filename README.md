@@ -51,7 +51,7 @@ This outputs a teams.csv file in the current directory that contains all the nec
 #### predictor.py
 This script pulls two teams from commandline arguments and predicts their scores in a matchup using the information 
 pulled from teams.csv. 
-##### Note: Use the exact team names as they appear in teams.csv. If a name contains spaces, enclose it in quotation marks.
+##### Note: Use the exact team names as they appear in teams.csv. If a name contains spaces, enclose it in quotation marks, as shown in example workflow below.
 
 #### Run predictor.py with command
 ```bash
