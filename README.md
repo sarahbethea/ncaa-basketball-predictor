@@ -5,20 +5,20 @@ This project predicts the outcomes of NCAA basketball games using statistical da
     2. A predictor script that analyzes the data and outputs game predictions.
 
 The prediction model adjusts for pace, offensive and defensive efficiency, and KenPom-style weights for shooting, turnovers, rebounding, and free throws — while also factoring in schedule strength and randomness. The output is a predicted final score for both teams in a given matchup. Its key components include:
-* Adjusted Tempo:
-    Each team’s tempo is calculated using their per-game averages (FGA, FTA, ORB, TOV, and MP). Then both teams' tempos are combined to create an adjusted tempo for the matchup.
-* Adjusted Offensive Efficiency (Adjusted OE):
-    Each team’s Offensive Efficiency (points per 100 possessions) is adjusted based on their opponent’s Defensive Efficiency, and by comparing both teams’ efficiencies to NCAA D1 averages. This creates a matchup-specific Adjusted OE.
-* KenPom-inspired 4 Factors Adjustment:
-    Following a KenPom-style approach, the two teams are compared using four key statistical factors. Each factor is computed as a difference between the two teams and weighted accordingly to create a factor adjustment that slightly boosts or penalizes each team's predicted score. The four factor and their weights are as follows:
-        - 40% Effective Field Goal % (eFG%)
-        - 25% Turnover % (TO%)
-        - 20% Offensive Rebound % (OR%)
-        - 15% Free Throw Rate (FT Rate)
-* Strength of Schedule (SOS) Adjustment:
-    To reward teams to have faced tougher opponents during the season, a boost is applied to each team's score based on their Strength of Schedule (SOS).
-* Luck Factor:
-    To simulate real-world variance, we introduce a random "luck" factor for each team, which randomly adds or subtracts up to 2 points.
+##### Adjusted Tempo:
+Each team’s tempo is calculated using their per-game averages (FGA, FTA, ORB, TOV, and MP). Then both teams' tempos are combined to create an adjusted tempo for the matchup.
+##### Adjusted Offensive Efficiency (Adjusted OE):
+Each team’s Offensive Efficiency (points per 100 possessions) is adjusted based on their opponent’s Defensive Efficiency, and by comparing both teams’ efficiencies to NCAA D1 averages. This creates a matchup-specific Adjusted OE.
+##### KenPom-inspired 4 Factors Adjustment:
+Following a KenPom-style approach, the two teams are compared using four key statistical factors. Each factor is computed as a difference between the two teams and weighted accordingly to create a factor adjustment that slightly boosts or penalizes each team's predicted score. The four factor and their weights are as follows:
+* 40% Effective Field Goal % (eFG%)
+* 25% Turnover % (TO%)
+* 20% Offensive Rebound % (OR%)
+* 15% Free Throw Rate (FT Rate)
+##### Strength of Schedule (SOS) Adjustment:
+To reward teams to have faced tougher opponents during the season, a boost is applied to each team's score based on their Strength of Schedule (SOS).
+##### Luck Factor:
+To simulate real-world variance, we introduce a random "luck" factor for each team, which randomly adds or subtracts up to 2 points.
 
 ## Dependencies
 Make sure you have the following Python packages installed:
